@@ -1,6 +1,6 @@
 # Local LLM using vLLM with AI Agent
 
-This repository powered by **vLLM, FastAPI, Qwen3-4B-Instruct model and Google Search**. 
+This repository powered by **vLLM, FastAPI, Qwen3-4B-Instruct model, Python and Google Search**. 
 
 The agent autonomously decides when to use web search tools to answer questions, providing transparent reasoning and step-by-step thought processes.
 
