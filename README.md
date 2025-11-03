@@ -1,6 +1,6 @@
 # Local LLM using vLLM with AI Agent
 
-This repository powered by **vLLM, FastAPI, Qwen3-4B-Instruct model, Python and Google Search**. 
+This repository powered by **vLLM, FastAPI, Qwen3-4B-Instruct model, Python and Google Search for Grounding**. 
 
 The agent autonomously decides when to use web search tools to answer questions, providing transparent reasoning and step-by-step thought processes.
 
@@ -9,7 +9,7 @@ The agent autonomously decides when to use web search tools to answer questions,
 This project demonstrates:
 - **Local LLM Inference**: Uses vLLM for fast, efficient model inference (Qwen3-4B-Instruct)
 - **Autonomous Tool Use**: Agent decides when to search the web based on the question
-- **Web Search Integration**: Uses Google Custom Search API with web scraping capabilities
+- **Grounding LLM with Web Search Integration**: Uses Google Custom Search API with web scraping capabilities
 - **REST API**: FastAPI server for easy integration and testing
 - **Transparent Reasoning**: View the agent's complete thought process and tool calls
 
