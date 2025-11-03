@@ -13,7 +13,7 @@ app = FastAPI(title="ReAct AI Agent with Web Search")
 model_path = "Qwen/Qwen3-4B-Instruct-2507"
 api_key = "<API_KEY>"  # Replace with your actual API key
 cx = "<CUSTOM_SEARCH_ENGINE_ID>"  # Replace with your actual Custom Search Engine ID
-
+max_web_results = 3  # Number of web search results to use
 
 # 2. Initialize vLLM with your model
 llm = LLM(
@@ -85,7 +85,7 @@ async def web_search_tool(query: str) -> str:
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
             }
             
-            for i, item in enumerate(items[:3], 1):  # Limit to first 3 results
+            for i, item in enumerate(items[:max_web_results], 1):  # Limit to first 3 results
                 link = item.get("link", "")
                 if not link:
                     continue
